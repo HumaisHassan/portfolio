@@ -288,6 +288,13 @@ body{
 	width: 22vw;
 }
 
+.btn-box-2a{
+	margin: 1.5vw 0 1.5vw 4vw;
+	display: flex;
+	justify-content: space-between;
+	width: 35vw;
+}
+
 #be-logo{
 	position: relative;
 	width: 59vw;
@@ -304,4 +311,57 @@ body{
 }
 
 
+.btn-box-2a a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 9.452vw;
+	height: 100%;
+	font-size: 1.197vw;
+	background: #00abf0;
+	border: 0.126vw solid #00abf0;
+	border-radius: 0.504vw;
+	color: #081b29;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.063vw;
+	z-index: 1;
+	overflow: hidden;
+	transition: .5s;
+	
+}
+
+.btn-box-2a a:nth-child(2) {
+	background: transparent;
+	color: #00abf0;
+}
+
+.btn-box-2a a:nth-child(2):hover {
+	color: #081b29;
+}
+
+.btn-box-2a a:nth-child(2)::before {
+	background: #00abf0;
+}
+
+.btn-box-2a a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #081b29;
+	z-index: -1;
+	transition: .5s;
+}
+
+.btn-box-2a a:hover::before {
+	width: 100%;
+}
+
+.btn-box-2a a:hover {
+	color: #00abf0;
+}
 
